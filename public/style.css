@@ -73,3 +73,36 @@ body {
 input[type="file"]:valid ~ .upload-label {
     border-color: #4CAF50;
 }
+.remove-btn {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #ff4444;
+}
+
+
+
+.upload-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #4CAF50;
+}
