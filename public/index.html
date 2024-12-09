@@ -6,10 +6,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h1 class="input-field">Upload image or pdf</h1>
-        <input type="file"/>
+    <div>
+
+        <h2 class="title">Upload</h2>
+
+        <div class="upload-container">
+            <label for="file-upload" class="upload-label">
+                <span class="upload-text">Click to Select File</span>
+                <input type="file" id="file-upload" class="file-input" accept=".pdf, image/*"  />
+            </label>
+            <div id="file-list" class="file-list"></div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,26 +1,75 @@
-.input-field {
-    width: auto;
-    padding: 8px 12px;
-    font-size: 14px;
-    border: 2px solid #e2e8f0;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f7fa;
+}
+
+.title {
+    color: #333;
+}
+.upload-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
     border-radius: 8px;
-    background: #fff;
-    transition: all 0.3s ease;
-    outline: none;
-    color: #334155;
-  }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
 
-  .input-field:focus {
-    border-color: #6366f1;
-    background: white;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-  }
+.upload-label {
+    display: block;
+    border: 2px dashed #4CAF50;
+    padding: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: #4CAF50;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-  .input-field:hover {
-    background: white;
-  }
+.upload-label:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
-  .wrapper {
-    padding: 20px;
-    max-width: 1400px;
-  }
+.upload-text {
+    font-size: 16px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.file-list p {
+    background: #e6e6e6;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.upload-container.dragover .upload-label {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.upload-container.dragover .upload-text {
+    font-weight: 700;
+}
+
+input[type="file"]:valid ~ .upload-label {
+    border-color: #4CAF50;
+}
